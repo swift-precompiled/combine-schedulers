@@ -14,7 +14,7 @@ let package = Package(
     products: [
         .library(
             name: "CombineSchedulers",
-            targets: ["CombineSchedulers_PrecompiledProduct"]
+            targets: ["CombineSchedulers", "CombineSchedulers_PrecompiledProduct"]
         )
     ],
     traits: [
@@ -41,8 +41,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CombineSchedulers",
-            url: "https://github.com/swift-precompiled/combine-schedulers/releases/download/1.2.0/CombineSchedulers-36189eb4df4a468d01b397912a4591f0b7a9a6f5777e53316ba4ba7f1d0c9491.xcframework.zip",
-            checksum: "36189eb4df4a468d01b397912a4591f0b7a9a6f5777e53316ba4ba7f1d0c9491"
+            url: "https://github.com/swift-precompiled/combine-schedulers/releases/download/1.2.0/CombineSchedulers-bf6d7715b4680f102ab1c1ebfda645240c46cfb6542f2719dba665a1c96a9ab3.xcframework.zip",
+            checksum: "bf6d7715b4680f102ab1c1ebfda645240c46cfb6542f2719dba665a1c96a9ab3"
         ),
         .target(
             name: "CombineSchedulers_PrecompiledProduct",
