@@ -37,12 +37,13 @@ let package = Package(
         .target(
             name: "CombineSchedulers_Aggregation",
             dependencies: ["CombineSchedulers"],
+            packageAccess: false,
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "CombineSchedulers",
-            url: "https://github.com/swift-precompiled/combine-schedulers/releases/download/1.2.0/CombineSchedulers-bf6d7715b4680f102ab1c1ebfda645240c46cfb6542f2719dba665a1c96a9ab3.xcframework.zip",
-            checksum: "bf6d7715b4680f102ab1c1ebfda645240c46cfb6542f2719dba665a1c96a9ab3"
+            url: "https://github.com/swift-precompiled/combine-schedulers/releases/download/1.2.0/CombineSchedulers-c8ac5c22226cb6bb548f13a08e1d6d1ded31d68e146a64b420cbf39a62502ff4.xcframework.zip",
+            checksum: "c8ac5c22226cb6bb548f13a08e1d6d1ded31d68e146a64b420cbf39a62502ff4"
         ),
         .target(
             name: "CombineSchedulers_PrecompiledProduct",
@@ -56,7 +57,8 @@ let package = Package(
                     name: "IssueReporting",
                     package: "xctest-dynamic-overlay"
                 )
-            ]
+            ],
+            packageAccess: false
         )
     ]
 )
